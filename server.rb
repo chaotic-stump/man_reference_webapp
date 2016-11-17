@@ -1,27 +1,26 @@
 require 'pry'
 require 'sinatra'
 require 'colorize'
+require 'Haml'
 
 get '/' do
-  erb :home
+  haml :home
 end
 
 get '/search' do
-  erb :search
+  haml :search
 end
 
 get '/list' do
-  erb :list
+  haml :list
 end
 
 get '/result' do
-  "You looked up #{params[:cmd]}."
-  `man #{params[:cmd]}`.to_s
+  haml :result
 end
 
 post '/result' do
-  "You looked up #{params[:cmd]}."
-  `man #{params[:cmd]}`.to_s
+  haml :result
 end
 
 
