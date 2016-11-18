@@ -1,10 +1,17 @@
 body {
   margin:0px;
-  background: url(/images/100_3946.JPG) no-repeat top center;
+  background: #FFFFFF no-repeat top center;
   background-size: 120%;
   background-position: 0px -300px;
+  height:100vh;
+}
+/* Wrapper */
+.wrapper {
+  margin:2% auto;
+  width:85%;
 }
 
+/* Navigation */
 nav.main-nav ul {
   width:100%;
   background-color:rgb(0,0,0);

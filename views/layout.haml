@@ -5,14 +5,16 @@
     %link(rel="stylesheet" href="http://yui.yahooapis.com/2.8.0r4/build/reset/reset-min.css")
     %link(rel="stylesheet" href="css/style.css")
   %body
-    %nav
-      %ul
+    %nav.main-nav
+      %ul.wrapper
+        %li
+          %a{:href => "/"} Home
         %li
           %a{:href => "/list"} List of Commands
         %li
           %a{:href => "/search"} Search Commands
 
-    #wrapper
+    #wrapper.wrapper
       #header
         %h1 Command Line Reference
 
@@ -24,6 +26,6 @@
         %p
           This is the side bar of the webpage
 
-      #footer
-        %p
-          This is the footer.
+  #footer
+    %p
+      This is the footer.
